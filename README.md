@@ -1,5 +1,6 @@
 # BookStore
-Work in progress... can add a book to cart and delete one book or entire cart, Hopefully I finish it before I forget typescript 
+Work in progress... can add a book to cart and delete one book or entire cart.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
 ## Development server
