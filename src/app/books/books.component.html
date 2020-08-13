@@ -1,0 +1,29 @@
+<div class ="container" style ="vertical-align: middle;width: 500px"> 
+        <div *ngFor = "let book of books">
+        
+            <a class ="list-group-item list-group-item-action flex-column align-items-start active">
+          <div class ="d-flex w-100 justify-content-between">
+            <h5 class ="mb-1">{{book.name}}</h5> <small>{{book.price}}</small>
+          </div>
+          <p class ="mb-1">{{book.author}}</p>
+          <button type = "button"  class="btn btn-secondary" (click) = "onCick(book)" >Add to Cart</button>
+          </a>
+          
+
+        <br>
+       
+        </div>
+        </div>
+
+
+        <div class = " container" style ="vertical-align:middle; width:300px">
+        <div class ="btn-toolbar" >
+          
+
+          <button type  = "button" class="btn btn-dark" routerLinkActive = "active"  routerLink= "/Bookadd">AddBook</button >
+        
+            <button type  = "button" class="btn btn-dark" (click)="delBook()">Delete</button >
+         </div>
+        </div>
+    <router-outlet></router-outlet>
+  

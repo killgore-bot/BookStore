@@ -1,0 +1,40 @@
+<p>cart works!</p>
+
+<div class ="container" style ="vertical-align: middle;width: 500px"> 
+    <div *ngFor = "let temp of temp2; let i = index">
+    
+        <a class ="list-group-item list-group-item-action flex-column align-items-start active">
+      <div class ="d-flex w-100 justify-content-between">
+        <h5 class ="mb-1">{{temp.name}}</h5> <small>{{temp.price}}</small>
+      </div>
+      <p class ="mb-1">{{temp.author}}</p>
+
+      <button type = "button" class = "btn btn-secondary" (click) = "delOne(i)"> Delete Item </button>
+     
+      
+      </a>
+      
+      
+    <br>
+  </div>
+
+  <div class ="container" style = "vertical-align: middle; width: 500px">
+
+      <button type = "button" class = "btn btn-secondary" (click) = "dCart()"> delete Cart </button>
+      <button type = "button" class = "nav-item nav-link-edit" [routerLink] = "['/order']"> CheckOut </button>
+      
+  </div>
+
+</div>
+
+    <div class = "container" style = "vertical-align:super;width:auto">
+      <div *ngFor = "let temp of temp2; let i =index">
+         
+        </div>
+      </div>
+
+    
+   
+    
+
+<router-outlet> </router-outlet>
